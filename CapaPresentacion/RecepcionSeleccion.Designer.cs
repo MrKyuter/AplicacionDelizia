@@ -66,6 +66,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             Controls.Add(pan_productos);
             Controls.Add(btn_siguiente);
             Controls.Add(btn_cancelar);

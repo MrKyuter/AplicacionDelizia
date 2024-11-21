@@ -35,7 +35,7 @@
             // 
             // btn_mis_pedidos
             // 
-            btn_mis_pedidos.Location = new Point(10, 10);
+            btn_mis_pedidos.Location = new Point(328, 168);
             btn_mis_pedidos.Name = "btn_mis_pedidos";
             btn_mis_pedidos.Size = new Size(75, 23);
             btn_mis_pedidos.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // btn_tomar_pedidos
             // 
-            btn_tomar_pedidos.Location = new Point(10, 39);
+            btn_tomar_pedidos.Location = new Point(328, 235);
             btn_tomar_pedidos.Name = "btn_tomar_pedidos";
             btn_tomar_pedidos.Size = new Size(75, 23);
             btn_tomar_pedidos.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // btn_salir
             // 
-            btn_salir.Location = new Point(10, 68);
+            btn_salir.Location = new Point(328, 298);
             btn_salir.Name = "btn_salir";
             btn_salir.Size = new Size(75, 23);
             btn_salir.TabIndex = 2;
@@ -67,6 +67,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             Controls.Add(btn_salir);
             Controls.Add(btn_tomar_pedidos);
             Controls.Add(btn_mis_pedidos);

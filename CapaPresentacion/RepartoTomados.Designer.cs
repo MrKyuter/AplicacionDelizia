@@ -55,6 +55,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             Controls.Add(pan_pedidos);
             Controls.Add(btn_volver);
             Name = "RepartoTomados";

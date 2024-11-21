@@ -34,7 +34,7 @@
             // 
             // btn_nuevopedido
             // 
-            btn_nuevopedido.Location = new Point(10, 10);
+            btn_nuevopedido.Location = new Point(330, 182);
             btn_nuevopedido.Name = "btn_nuevopedido";
             btn_nuevopedido.Size = new Size(75, 23);
             btn_nuevopedido.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // btn_salir
             // 
-            btn_salir.Location = new Point(10, 39);
+            btn_salir.Location = new Point(330, 281);
             btn_salir.Name = "btn_salir";
             btn_salir.Size = new Size(75, 23);
             btn_salir.TabIndex = 1;
@@ -56,6 +56,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             Controls.Add(btn_salir);
             Controls.Add(btn_nuevopedido);
             Name = "RecepcionMenu";

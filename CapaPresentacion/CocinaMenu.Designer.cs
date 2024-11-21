@@ -34,7 +34,7 @@
             // 
             // btn_verpedidos
             // 
-            btn_verpedidos.Location = new Point(10, 10);
+            btn_verpedidos.Location = new Point(339, 228);
             btn_verpedidos.Name = "btn_verpedidos";
             btn_verpedidos.Size = new Size(75, 23);
             btn_verpedidos.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // btn_salir
             // 
-            btn_salir.Location = new Point(10, 39);
+            btn_salir.Location = new Point(339, 299);
             btn_salir.Name = "btn_salir";
             btn_salir.Size = new Size(75, 23);
             btn_salir.TabIndex = 1;
@@ -56,6 +56,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             Controls.Add(btn_salir);
             Controls.Add(btn_verpedidos);
             Name = "CocinaMenu";

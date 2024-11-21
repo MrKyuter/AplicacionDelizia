@@ -208,6 +208,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             Controls.Add(pan_contenido);
             Controls.Add(btn_confirmar);
             Controls.Add(btn_anterior);
