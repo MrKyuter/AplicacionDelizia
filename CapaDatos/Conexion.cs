@@ -11,8 +11,8 @@ namespace CapaDatos
         private MySqlConnection conexion;
         private string server = "localhost";
         private string database = "base_delizia";
-        private string user = "admin-user";
-        private string password = "k9Ph4W8/3pG-yn5H";
+        private string user = "root";
+        private string password = "";
         private string cadena_conexion;
 
         public Conexion()
