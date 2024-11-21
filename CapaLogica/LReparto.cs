@@ -49,5 +49,11 @@ namespace CapaLogica
             Conexion c = new Conexion();
             c.modificar(consulta);
         }
-    }
+        public void tomar_pedido(string cedula, int pedido)
+        {
+            string consulta = "UPDATE pedidos SET Repartidor=" + cedula + " WHERE Id=" + pedido;
+            Conexion c = new Conexion();
+            c.modificar(consulta);
+        }
+    }   
 }

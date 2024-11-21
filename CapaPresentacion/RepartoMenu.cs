@@ -38,7 +38,9 @@ namespace CapaPresentacion
 
         private void btn_tomar_pedidos_Click(object sender, EventArgs e)
         {
-
+            this.Dispose();
+            padre.Controls.Remove(this);
+            padre.Controls.Add(new RepartoSeleccion(padre, user));
         }
     }
 }
