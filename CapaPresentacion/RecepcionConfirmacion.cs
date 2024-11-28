@@ -94,7 +94,8 @@ namespace CapaPresentacion
             lrecepcion.insertar_pedido(pedido);
             pedido.id = lrecepcion.obtener_id_pedido(pedido);
 
-            foreach (Producto p in productos_pedido) {
+            foreach (Producto p in productos_pedido)
+            {
                 lrecepcion.insertar_pedido_producto(pedido.id, p.id, p.cantidad);
             }
 
@@ -115,6 +116,21 @@ namespace CapaPresentacion
             this.Dispose();
             padre.Controls.Remove(this);
             padre.Controls.Add(new RecepcionSeleccion(padre, user, productos));
+        }
+
+        private void pan_productos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_subtitulo1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_total_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

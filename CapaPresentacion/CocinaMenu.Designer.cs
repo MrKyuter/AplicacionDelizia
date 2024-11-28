@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CocinaMenu));
             btn_verpedidos = new Button();
             btn_salir = new Button();
             SuspendLayout();
             // 
             // btn_verpedidos
             // 
-            btn_verpedidos.Location = new Point(339, 228);
+            btn_verpedidos.Location = new Point(358, 140);
             btn_verpedidos.Name = "btn_verpedidos";
-            btn_verpedidos.Size = new Size(75, 23);
+            btn_verpedidos.Size = new Size(101, 23);
             btn_verpedidos.TabIndex = 0;
             btn_verpedidos.Text = "Ver pedidos";
             btn_verpedidos.UseVisualStyleBackColor = true;
@@ -44,9 +45,9 @@
             // 
             // btn_salir
             // 
-            btn_salir.Location = new Point(339, 299);
+            btn_salir.Location = new Point(358, 320);
             btn_salir.Name = "btn_salir";
-            btn_salir.Size = new Size(75, 23);
+            btn_salir.Size = new Size(101, 23);
             btn_salir.TabIndex = 1;
             btn_salir.Text = "Salir";
             btn_salir.UseVisualStyleBackColor = true;
@@ -57,10 +58,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(btn_salir);
             Controls.Add(btn_verpedidos);
             Name = "CocinaMenu";
-            Size = new Size(776, 426);
+            Size = new Size(807, 437);
             ResumeLayout(false);
         }
 

@@ -28,13 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btn_volver = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CocinaPedidos));
             pan_pedidos = new Panel();
+            btn_volver = new Button();
             SuspendLayout();
+            // 
+            // pan_pedidos
+            // 
+            pan_pedidos.BackColor = Color.Transparent;
+            pan_pedidos.Location = new Point(70, 165);
+            pan_pedidos.Name = "pan_pedidos";
+            pan_pedidos.Size = new Size(703, 239);
+            pan_pedidos.TabIndex = 1;
             // 
             // btn_volver
             // 
-            btn_volver.Location = new Point(3, 400);
+            btn_volver.Location = new Point(3, 425);
             btn_volver.Name = "btn_volver";
             btn_volver.Size = new Size(75, 23);
             btn_volver.TabIndex = 0;
@@ -42,28 +51,21 @@
             btn_volver.UseVisualStyleBackColor = true;
             btn_volver.Click += btn_volver_Click;
             // 
-            // pan_pedidos
-            // 
-            pan_pedidos.Location = new Point(3, 3);
-            pan_pedidos.Name = "pan_pedidos";
-            pan_pedidos.Size = new Size(770, 391);
-            pan_pedidos.TabIndex = 1;
-            // 
             // CocinaPedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(pan_pedidos);
             Controls.Add(btn_volver);
             Name = "CocinaPedidos";
-            Size = new Size(776, 426);
+            Size = new Size(843, 451);
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button btn_volver;
         private Panel pan_pedidos;
+        private Button btn_volver;
     }
 }

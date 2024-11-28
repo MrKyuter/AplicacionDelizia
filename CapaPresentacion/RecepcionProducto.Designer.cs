@@ -33,6 +33,8 @@
             btn_sumar = new Button();
             lbl_cantidad = new Label();
             lbl_precio = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lbl_nombre
@@ -76,17 +78,29 @@
             // lbl_precio
             // 
             lbl_precio.AutoSize = true;
-            lbl_precio.Location = new Point(3, 53);
+            lbl_precio.Location = new Point(3, 189);
             lbl_precio.Name = "lbl_precio";
             lbl_precio.Size = new Size(46, 15);
             lbl_precio.TabIndex = 4;
             lbl_precio.Text = "$Precio";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(14, 42);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(159, 131);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // RecepcionProducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Highlight;
+            BackColor = Color.Transparent;
+            Controls.Add(pictureBox1);
             Controls.Add(lbl_precio);
             Controls.Add(lbl_cantidad);
             Controls.Add(btn_sumar);
@@ -94,6 +108,7 @@
             Controls.Add(lbl_nombre);
             Name = "RecepcionProducto";
             Size = new Size(200, 250);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -105,5 +120,6 @@
         private Button btn_sumar;
         private Label lbl_cantidad;
         private Label lbl_precio;
+        private PictureBox pictureBox1;
     }
 }

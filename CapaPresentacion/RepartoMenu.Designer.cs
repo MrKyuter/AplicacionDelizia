@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RepartoMenu));
             btn_mis_pedidos = new Button();
             btn_tomar_pedidos = new Button();
             btn_salir = new Button();
@@ -35,31 +36,31 @@
             // 
             // btn_mis_pedidos
             // 
-            btn_mis_pedidos.Location = new Point(328, 168);
+            btn_mis_pedidos.BackgroundImage = (Image)resources.GetObject("btn_mis_pedidos.BackgroundImage");
+            btn_mis_pedidos.Location = new Point(328, 259);
             btn_mis_pedidos.Name = "btn_mis_pedidos";
-            btn_mis_pedidos.Size = new Size(75, 23);
+            btn_mis_pedidos.Size = new Size(108, 26);
             btn_mis_pedidos.TabIndex = 0;
-            btn_mis_pedidos.Text = "Mis pedidos";
             btn_mis_pedidos.UseVisualStyleBackColor = true;
             btn_mis_pedidos.Click += btn_mis_pedidos_Click;
             // 
             // btn_tomar_pedidos
             // 
-            btn_tomar_pedidos.Location = new Point(328, 235);
+            btn_tomar_pedidos.BackgroundImage = (Image)resources.GetObject("btn_tomar_pedidos.BackgroundImage");
+            btn_tomar_pedidos.Location = new Point(328, 159);
             btn_tomar_pedidos.Name = "btn_tomar_pedidos";
-            btn_tomar_pedidos.Size = new Size(75, 23);
+            btn_tomar_pedidos.Size = new Size(108, 25);
             btn_tomar_pedidos.TabIndex = 1;
-            btn_tomar_pedidos.Text = "Tomar pedidos";
             btn_tomar_pedidos.UseVisualStyleBackColor = true;
             btn_tomar_pedidos.Click += btn_tomar_pedidos_Click;
             // 
             // btn_salir
             // 
-            btn_salir.Location = new Point(328, 298);
+            btn_salir.BackgroundImage = (Image)resources.GetObject("btn_salir.BackgroundImage");
+            btn_salir.Location = new Point(328, 372);
             btn_salir.Name = "btn_salir";
-            btn_salir.Size = new Size(75, 23);
+            btn_salir.Size = new Size(108, 25);
             btn_salir.TabIndex = 2;
-            btn_salir.Text = "Salir";
             btn_salir.UseVisualStyleBackColor = true;
             btn_salir.Click += btn_salir_Click;
             // 
@@ -67,12 +68,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.Transparent;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(btn_salir);
             Controls.Add(btn_tomar_pedidos);
             Controls.Add(btn_mis_pedidos);
             Name = "RepartoMenu";
-            Size = new Size(776, 426);
+            Size = new Size(861, 454);
+            Load += RepartoMenu_Load;
             ResumeLayout(false);
         }
 

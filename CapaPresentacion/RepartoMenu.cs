@@ -42,5 +42,10 @@ namespace CapaPresentacion
             padre.Controls.Remove(this);
             padre.Controls.Add(new RepartoSeleccion(padre, user));
         }
+
+        private void RepartoMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

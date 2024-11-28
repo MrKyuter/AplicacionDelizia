@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecepcionMenu));
             btn_nuevopedido = new Button();
             btn_salir = new Button();
             SuspendLayout();
             // 
             // btn_nuevopedido
             // 
-            btn_nuevopedido.Location = new Point(330, 182);
+            btn_nuevopedido.BackgroundImage = (Image)resources.GetObject("btn_nuevopedido.BackgroundImage");
+            btn_nuevopedido.Location = new Point(330, 154);
             btn_nuevopedido.Name = "btn_nuevopedido";
-            btn_nuevopedido.Size = new Size(75, 23);
+            btn_nuevopedido.Size = new Size(114, 27);
             btn_nuevopedido.TabIndex = 0;
-            btn_nuevopedido.Text = "Nuevo pedido";
             btn_nuevopedido.UseVisualStyleBackColor = true;
             btn_nuevopedido.Click += btn_nuevopedido_Click;
             // 
             // btn_salir
             // 
-            btn_salir.Location = new Point(330, 281);
+            btn_salir.BackgroundImage = (Image)resources.GetObject("btn_salir.BackgroundImage");
+            btn_salir.Location = new Point(330, 291);
             btn_salir.Name = "btn_salir";
-            btn_salir.Size = new Size(75, 23);
+            btn_salir.Size = new Size(114, 24);
             btn_salir.TabIndex = 1;
-            btn_salir.Text = "Salir";
             btn_salir.UseVisualStyleBackColor = true;
             btn_salir.Click += btn_salir_Click;
             // 
@@ -56,11 +57,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.Transparent;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(btn_salir);
             Controls.Add(btn_nuevopedido);
             Name = "RecepcionMenu";
-            Size = new Size(776, 426);
+            Size = new Size(861, 454);
             ResumeLayout(false);
         }
 

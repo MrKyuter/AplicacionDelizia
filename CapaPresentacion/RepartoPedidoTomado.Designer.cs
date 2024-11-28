@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RepartoPedidoTomado));
             btn_cambiar_estado = new Button();
             label1 = new Label();
             label2 = new Label();
@@ -36,9 +37,9 @@
             // 
             // btn_cambiar_estado
             // 
-            btn_cambiar_estado.Location = new Point(9, 205);
+            btn_cambiar_estado.Location = new Point(125, 190);
             btn_cambiar_estado.Name = "btn_cambiar_estado";
-            btn_cambiar_estado.Size = new Size(75, 23);
+            btn_cambiar_estado.Size = new Size(70, 26);
             btn_cambiar_estado.TabIndex = 0;
             btn_cambiar_estado.Text = "ESTADO";
             btn_cambiar_estado.UseVisualStyleBackColor = true;
@@ -47,7 +48,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(9, 7);
+            label1.Location = new Point(32, 113);
             label1.Name = "label1";
             label1.Size = new Size(57, 15);
             label1.TabIndex = 1;
@@ -56,7 +57,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(9, 47);
+            label2.Location = new Point(32, 142);
             label2.Name = "label2";
             label2.Size = new Size(91, 15);
             label2.TabIndex = 2;
@@ -65,7 +66,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(9, 93);
+            label3.Location = new Point(32, 172);
             label3.Name = "label3";
             label3.Size = new Size(97, 15);
             label3.TabIndex = 3;
@@ -75,11 +76,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Highlight;
+            BackColor = Color.Transparent;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btn_cambiar_estado);
+            DoubleBuffered = true;
             Name = "RepartoPedidoTomado";
             Size = new Size(209, 231);
             ResumeLayout(false);

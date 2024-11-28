@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RepartoTomados));
             pan_pedidos = new Panel();
             btn_volver = new Button();
             SuspendLayout();
@@ -36,9 +37,10 @@
             // 
             pan_pedidos.AutoScroll = true;
             pan_pedidos.AutoScrollMargin = new Size(10, 10);
-            pan_pedidos.Location = new Point(3, 3);
+            pan_pedidos.BackColor = Color.Transparent;
+            pan_pedidos.Location = new Point(49, 110);
             pan_pedidos.Name = "pan_pedidos";
-            pan_pedidos.Size = new Size(770, 391);
+            pan_pedidos.Size = new Size(754, 284);
             pan_pedidos.TabIndex = 5;
             // 
             // btn_volver
@@ -56,10 +58,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(pan_pedidos);
             Controls.Add(btn_volver);
             Name = "RepartoTomados";
-            Size = new Size(776, 426);
+            Size = new Size(829, 439);
             ResumeLayout(false);
         }
 

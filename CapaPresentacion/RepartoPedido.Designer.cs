@@ -81,11 +81,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.SkyBlue;
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btn_cambiar_estado);
+            Margin = new Padding(4);
             Name = "RepartoPedido";
             Size = new Size(209, 231);
             ResumeLayout(false);

@@ -93,5 +93,10 @@ namespace CapaPresentacion
 
             mostrar_pedidos(pedidos);
         }
+
+        private void RepartoSeleccion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

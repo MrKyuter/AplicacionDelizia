@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecepcionSeleccion));
             btn_cancelar = new Button();
             btn_siguiente = new Button();
             pan_productos = new Panel();
@@ -35,7 +36,7 @@
             // 
             // btn_cancelar
             // 
-            btn_cancelar.Location = new Point(3, 400);
+            btn_cancelar.Location = new Point(44, 429);
             btn_cancelar.Name = "btn_cancelar";
             btn_cancelar.Size = new Size(75, 23);
             btn_cancelar.TabIndex = 0;
@@ -45,7 +46,7 @@
             // 
             // btn_siguiente
             // 
-            btn_siguiente.Location = new Point(698, 400);
+            btn_siguiente.Location = new Point(754, 429);
             btn_siguiente.Name = "btn_siguiente";
             btn_siguiente.Size = new Size(75, 23);
             btn_siguiente.TabIndex = 1;
@@ -57,9 +58,10 @@
             // 
             pan_productos.AutoScroll = true;
             pan_productos.AutoScrollMargin = new Size(10, 10);
-            pan_productos.Location = new Point(3, 3);
+            pan_productos.BackColor = Color.Transparent;
+            pan_productos.Location = new Point(181, 58);
             pan_productos.Name = "pan_productos";
-            pan_productos.Size = new Size(770, 391);
+            pan_productos.Size = new Size(648, 365);
             pan_productos.TabIndex = 2;
             // 
             // RecepcionSeleccion
@@ -67,11 +69,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            Controls.Add(pan_productos);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(btn_siguiente);
             Controls.Add(btn_cancelar);
+            Controls.Add(pan_productos);
             Name = "RecepcionSeleccion";
-            Size = new Size(776, 426);
+            Size = new Size(852, 454);
             ResumeLayout(false);
         }
 

@@ -57,5 +57,20 @@ namespace CapaPresentacion
             // txt_rol.Text = string.Empty;
             menu_rol.Text = "0";
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

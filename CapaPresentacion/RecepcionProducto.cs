@@ -19,6 +19,8 @@ namespace CapaPresentacion
             InitializeComponent();
             this.producto = producto;
             actualizar_informacion();
+            string rutaimagen = "C:\\Users\\usuario\\source\\repos\\AplicacionDelizia\\imagenes\\" + producto.id + ".png";
+            pictureBox1.ImageLocation = rutaimagen;
         }
 
         public void actualizar_informacion()
@@ -41,6 +43,11 @@ namespace CapaPresentacion
                 producto.cantidad -= 1;
                 lbl_cantidad.Text = producto.cantidad.ToString();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
