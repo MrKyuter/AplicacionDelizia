@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdministracionUsuariosAgregar));
             panel1 = new Panel();
+            button1 = new Button();
             txt_direccion = new TextBox();
             label6 = new Label();
             txt_apellido = new TextBox();
@@ -59,6 +60,7 @@
             // 
             panel1.BackColor = SystemColors.ActiveCaption;
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(txt_direccion);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(txt_apellido);
@@ -84,6 +86,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(773, 423);
             panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(22, 394);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 23;
+            button1.Text = "Volver";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // txt_direccion
             // 
@@ -300,5 +312,6 @@
         private TextBox txt_correo;
         private Label label7;
         private TextBox txt_contrasena;
+        private Button button1;
     }
 }

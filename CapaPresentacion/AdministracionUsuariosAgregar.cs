@@ -72,5 +72,12 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            padre.Controls.Remove(this);
+            padre.Controls.Add(new Login(padre));
+        }
     }
 }
